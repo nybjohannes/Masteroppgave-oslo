@@ -4,7 +4,7 @@ library(dplyr)
 library(stargazer)
 
 
-#setwd("/Users/johannesnyborg/Documents/Master/Masteroppgave/Data")
+
 
 valgdeltakelse <- read_excel("valgdeltakelse.xlsx")
 utdanning <- read_excel("utdanning.xlsx")
