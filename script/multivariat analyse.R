@@ -93,7 +93,7 @@ colSums(is.na(panel_2005))
 
 
 
-repr_bydel_ar <- readRDS(data/bydel_ar_repr_allpartier_pop.rds")
+repr_bydel_ar <- readRDS("data/bydel_ar_repr_allpartier_pop.rds")
 
 glimpse(repr_bydel_ar)
 names(repr_bydel_ar)
