@@ -40,8 +40,8 @@ party_colors <- c(
 )
 
 #leser inn data
-vl_nom <- readRDS("data_final/valglister_golden_current.rds") #flotte datasettene mine
-vl_put <- readRDS("data_final/valglister_golden_put.rds")
+vl_nom <- readRDS("data/valglister_golden_current.rds") #flotte datasettene mine
+vl_put <- readRDS("data/valglister_golden_put.rds")
 
 
 recode_party <- function(x) {
