@@ -34,7 +34,7 @@ bydel_all <- bydel_nom_all %>%
     n_kandidater_put = ifelse(is.na(n_kandidater_put), 0L, n_kandidater_put)
   )
 
-saveRDS(bydel_all, "data_intermediate/bydel_ar_repr_allpartier.rds")
+#saveRDS(bydel_all, "data/bydel_ar_repr_allpartier.rds")
 
 
 
@@ -150,8 +150,8 @@ view(pop_valg)
 library(dplyr)
 library(stringr)
 
-bydel_all <- readRDS("data_intermediate/bydel_ar_repr_allpartier.rds")
-pop_valg  <- readRDS("data_intermediate/befolkning_bydel_valgar_2000_2025.rds")
+bydel_all <- readRDS("data/bydel_ar_repr_allpartier.rds")
+pop_valg  <- readRDS("data/befolkning_bydel_valgar_2000_2025.rds")
 
 bydel_all_pop <- bydel_all %>%
   mutate(
