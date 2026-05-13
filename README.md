@@ -1,9 +1,6 @@
-# Masteroppgave-oslo
-R-script og datasett som brukes i masteroppgaven min og geografisk representasjon i Oslo. 
-
 # Masteroppgave Oslo
 
-Dette repositoriet inneholder R-skript og datasett brukt i masteroppgaven:
+Dette repositoriet inneholder R-script og datasett som er brukt i masteroppgaven:
 
 **Hvor er’u bor hen a? En kvantitativ undersøkelse av geografisk representasjon på valglistene og sammenhengen med valgdeltakelsen i Oslo**
 
@@ -11,7 +8,7 @@ Masteroppgave i statsvitenskap, Universitetet i Oslo, våren 2026.
 
 ## Innhold
 
-Repositoriet inneholder datagrunnlag og skript brukt til databehandling, figurer og analyser i oppgaven.
+Repositoriet inneholder datagrunnlag og script brukt til databehandling, figurer og analyser i oppgaven.
 
 ## Mappestruktur
 
@@ -25,19 +22,19 @@ De viktigste filene er:
   Endelig kandidatdatasett med alle kandidater på valglistene i Oslo.
 
 - `valglister_golden_put.rds` / `.csv`  
-  Datasett med toppkandidater etter Put+2-operasjonaliseringen.
+  Datasett med toppkandidater etter Put+2-operasjonaliseringa fra oppgaven.
 
 - `bydel_ar_repr_allpartier_pop.rds` / `.csv`  
-  Bydel-år-datasett med representasjon og befolkning.
+  Bydel-år-datasett med "representasjonspoeng" og befolkning.
 
 - `valgdeltakelse.xlsx`, `utdanning.xlsx`, `innvandring.xlsx`, `inntekt.xlsx`  
   Bydelsvise kontroll- og utfallsdata brukt i den multivariate analysen.
 
 ### `script/`
 
-Inneholder R-skript brukt til databehandling, figurer og analyser.
+Inneholder R-script brukt til databehandling, figurer og analyser.
 
-Sentrale skript:
+Sentrale script:
 
 - `lage put.R`  
   Lager datasettet med toppkandidater etter Put+2-operasjonaliseringen.
@@ -65,7 +62,7 @@ Sentrale skript:
 
 ## Filformater
 
-Flere datasett ligger både som `.rds` og `.csv`.
+Flere datasett ligger både som `.rds` og `.csv`. De bydelsspesifikke dataene ligger som `.xlsx`.
 
 R-skriptene bruker primært `.rds`-filene. CSV-filene er lagt ved for enklere innsyn utenfor R.
 
@@ -73,4 +70,4 @@ R-skriptene bruker primært `.rds`-filene. CSV-filene er lagt ved for enklere in
 
 Prosjektet bygger på et egenutviklet datasett over valglister i Oslo fra 1987 til 2025. Deler av datagrunnlaget er manuelt digitalisert fra historiske valglister, statistiske årbøker og andre offentlige kilder.
 
-Skriptene er først og fremst ment som dokumentasjon av databehandling, figurproduksjon og analyser brukt i masteroppgaven.
+Scriptene er først og fremst ment som dokumentasjon av databehandling, figurproduksjon og analyser brukt i masteroppgaven.
