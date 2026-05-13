@@ -36,6 +36,8 @@ labs_dt <- merge(labs_dt, ward_lookup, by = "location_code", all.x = TRUE)
 
 stopifnot(!any(is.na(map_dt$ward_name)))
 
+bydel_all_pop <- readRDS("data/bydel_ar_repr_allpartier_pop.rds")
+
 # 2. Beregner representasjonsratio per bydel - dette for å kunne se per innbygger
 
 # Renset versjon for ratio-beregninger
