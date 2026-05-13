@@ -68,7 +68,7 @@ panel_2001 %>%
 
 #da går jeg videre, og lager panel også med inntekt
 
-inntekt <- read_excel("inntekt.xlsx")
+inntekt <- read_excel("data/inntekt.xlsx")
 if("geo_nivå" %in% names(inntekt)) {
   inntekt <- inntekt %>% filter(geo_nivå == "bydel")
 }
