@@ -368,7 +368,7 @@ p_sp_put
 
 # så prøver jeg meg på ratio, selv om det blir litt mindre datamateriale
 
-
+bydel_all_pop <- readRDS("data/bydel_ar_repr_allpartier_pop.rds")
 
 bydel_pop_avg <- bydel_all_pop %>%
   filter(
