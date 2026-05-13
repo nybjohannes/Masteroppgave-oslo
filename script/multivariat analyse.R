@@ -6,9 +6,9 @@ library(stargazer)
 
 
 
-valgdeltakelse <- read_excel("valgdeltakelse.xlsx")
-utdanning <- read_excel("utdanning.xlsx")
-innvandring <- read_excel("innvandring.xlsx")
+valgdeltakelse <- read_excel("data/valgdeltakelse.xlsx")
+utdanning <- read_excel("data/utdanning.xlsx")
+innvandring <- read_excel("data/innvandring.xlsx")
 
 colnames(valgdeltakelse)
 colnames(utdanning)
