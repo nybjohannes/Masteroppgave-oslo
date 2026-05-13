@@ -2,7 +2,7 @@
 
 Dette repositoriet inneholder R-skript og datasett brukt i masteroppgaven:
 
-**Hvor er’u bor hen a? En kvantitativ undersøkelse av geografisk representasjon på valglistene og sammenhengen med valgdeltakelsen i Oslo**
+**Hvor er’u bor hen a?: En kvantitativ undersøkelse av geografisk representasjon på valglistene og sammenhengen med valgdeltakelsen i Oslo**
 
 Masteroppgave i statsvitenskap, Universitetet i Oslo, våren 2026.
 
