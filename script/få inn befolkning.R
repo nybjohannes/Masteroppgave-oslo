@@ -1,22 +1,22 @@
-setwd("/Users/johannesnyborg/Documents/Master/Masteroppgave/Data/Deskriptiv Analyse Oslo")
-bydel_all_pop <- readRDS("data_intermediate/bydel_ar_repr_allpartier_pop.rds")
+
+bydel_all_pop <- readRDS("data/bydel_ar_repr_allpartier_pop.rds")
 
 
-file.exists("data_intermediate/bydel_ar_repr_allpartier_pop.rds")
+#file.exists("data/bydel_ar_repr_allpartier_pop.rds")
 
 
 
 
-bydel_all_pop <- readRDS("data_intermediate/bydel_ar_repr_allpartier_pop.rds")
+bydel_all_pop <- readRDS("data/bydel_ar_repr_allpartier_pop.rds")
 
 # sanity
 range(bydel_all_pop$ar, na.rm = TRUE)
 sum(is.na(bydel_all_pop$befolkning))
 
 
-file.copy(
-  "data_intermediate/bydel_ar_repr_allpartier_pop.rds",
-  "data_intermediate/bydel_ar_repr_allpartier_pop_BACKUP.rds",
+#file.copy(
+  "data/bydel_ar_repr_allpartier_pop.rds",
+  "data/bydel_ar_repr_allpartier_pop_BACKUP.rds",
   overwrite = TRUE
 )
 
