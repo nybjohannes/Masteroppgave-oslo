@@ -1,8 +1,8 @@
 library(dplyr)
 library(stringr)
 
-vl_nom <- readRDS("data_final/valglister_golden_current.rds")
-vl_put <- readRDS("data_final/valglister_golden_put.rds")
+vl_nom <- readRDS("data/valglister_golden_current.rds")
+vl_put <- readRDS("data/valglister_golden_put.rds")
 
 # Sjekk at bydel og ar finnes:
 # names(vl_nom)
