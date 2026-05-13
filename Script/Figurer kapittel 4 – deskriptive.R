@@ -6,7 +6,7 @@ library(scales)
 library(viridis)
 
 ## Data antas å være lastet:
-## bydel_all_pop <- readRDS("data_intermediate/bydel_ar_repr_allpartier_pop.rds")
+## bydel_all_pop <- readRDS("data/bydel_ar_repr_allpartier_pop.rds")
 
 # Mappe for figurer
 dir.create("figures", showWarnings = FALSE)
