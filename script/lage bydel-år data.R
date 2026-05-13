@@ -94,7 +94,7 @@ bydel_store <- bydel_nom_store %>%
     n_kandidater_put = ifelse(is.na(n_kandidater_put), 0L, n_kandidater_put)
   )
 
-saveRDS(bydel_store, "data_intermediate/bydel_ar_repr_storepartier.rds")
+#saveRDS(bydel_store, "data/bydel_ar_repr_storepartier.rds")
 
 
 
@@ -132,14 +132,14 @@ pop_tidy <- pop1 %>%
   )
 
 # Bare valgår vi faktisk har representasjonsdata for (og fra 2000)
-bydel_all <- readRDS("data_intermediate/bydel_ar_repr_allpartier.rds")
+bydel_all <- readRDS("data/bydel_ar_repr_allpartier.rds")
 valgar <- sort(unique(bydel_all$ar))
 
 pop_valg <- pop_tidy %>%
   filter(ar %in% valgar,
          ar >= 2000)
 
-saveRDS(pop_valg, "data_intermediate/befolkning_bydel_valgar_2000_2025.rds")
+#saveRDS(pop_valg, "data/befolkning_bydel_valgar_2000_2025.rds")
 
 
 
@@ -171,7 +171,7 @@ bydel_all_pop <- bydel_all %>%
   ) %>%
   select(-bydel_key)  # rydder vekk nøkkelen hvis du ikke vil ha den med
 
-saveRDS(bydel_all_pop, "data_intermediate/bydel_ar_repr_allpartier_pop.rds")
+#saveRDS(bydel_all_pop, "data/bydel_ar_repr_allpartier_pop.rds")
 
 
 
@@ -180,7 +180,7 @@ saveRDS(bydel_all_pop, "data_intermediate/bydel_ar_repr_allpartier_pop.rds")
 #Slå sammen store
 
 
-bydel_store <- readRDS("data_intermediate/bydel_ar_repr_storepartier.rds")
+bydel_store <- readRDS("data/bydel_ar_repr_storepartier.rds")
 
 bydel_store_pop <- bydel_store %>%
   mutate(
@@ -200,7 +200,7 @@ bydel_store_pop <- bydel_store %>%
   ) %>%
   select(-bydel_key)
 
-saveRDS(bydel_store_pop, "data_intermediate/bydel_ar_repr_storepartier_pop.rds")
+#saveRDS(bydel_store_pop, "data/bydel_ar_repr_storepartier_pop.rds")
 
 
 
